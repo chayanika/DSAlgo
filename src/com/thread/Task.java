@@ -16,13 +16,7 @@ public class Task implements Runnable {
 
     @Override
     public void run() {
- //       try{
-//            Long duration = (long)(Math.random()*10);
-//            System.out.println("Executing name in task class: " +name);
-//            TimeUnit.SECONDS.sleep(duration);
-            System.out.println("Executing : " + name + ", Current Seconds : " + new Date().getSeconds());
-//        } catch (InterruptedException e) {
-////            e.printStackTrace();
-////        }
+        System.out.println("Executing : " + name + ", Current Seconds : " + new Date().getSeconds());
+
     }
 }
