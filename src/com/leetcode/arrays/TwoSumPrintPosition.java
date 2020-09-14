@@ -4,11 +4,11 @@ import java.util.HashMap;
 import java.util.Map;
 
 public class TwoSumPrintPosition {
-    public int[]  getpositions(int arr[] , int num){
+    public int[]  getpositions(int arr[] , int target){
         Map<Integer, Integer> hmap = new HashMap<>();
         int arr1[] = new int[arr.length];
         for(int i =0; i<arr.length;i++) {
-            int value = num - arr[i];
+            int value = target - arr[i];
             if (!hmap.containsKey(value)) {
                 hmap.put(arr[i], i);
             } else
