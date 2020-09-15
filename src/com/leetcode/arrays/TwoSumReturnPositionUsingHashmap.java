@@ -3,11 +3,11 @@ package com.leetcode.arrays;
 import java.util.HashMap;
 import java.util.Map;
 
-public class TwoSumRetunPosition {
+public class TwoSumReturnPositionUsingHashmap {
 
     public int[]  getpositions(int arr[] , int num){
         Map<Integer, Integer> hmap = new HashMap<>();
-        int arr1[] = new int[arr.length];
+        int arr1[] = new int[2];
         for(int i =0; i<arr.length;i++) {
             int value = num - arr[i];
             if (!hmap.containsKey(value)) {
@@ -25,7 +25,7 @@ public class TwoSumRetunPosition {
     public static void main(String args[]){
         int arr[] = {2, 7, 11, 15};
         int num = 9;
-        TwoSumRetunPosition obj = new TwoSumRetunPosition();
+        TwoSumReturnPositionUsingHashmap obj = new TwoSumReturnPositionUsingHashmap();
         int ans[] = obj.getpositions(arr, num);
         System.out.println("Positions are: " + ans[0] + " " +ans[1]);
     }
